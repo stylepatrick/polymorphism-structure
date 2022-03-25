@@ -5,7 +5,7 @@ public class SortedList {
     void push(Animal animal) {
         Animal h = head;
         Animal prev = null;
-        while (h != null && !h.idSmallerThan(animal)) {
+        while (h != null && !animal.idSmallerThan(h)) {
             prev = h;
             h = h.next;
         }

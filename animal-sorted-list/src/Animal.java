@@ -11,10 +11,10 @@ public abstract class Animal {
     }
 
     public boolean idSmallerThan(Animal animal) {
-        return animal.id < this.id;
+        return this.id < animal.id;
     }
 
-    // Abstract methode (if one methode is abstract class must be abstract too), no implementation of methode
+    // If one methode in class is abstract class must be abstract too
     public abstract String speak();
 
 }
